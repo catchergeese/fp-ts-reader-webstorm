@@ -1,5 +1,10 @@
 import { example }  from "./reader";
+import { ctx } from "./ctx";
 
 const usage = () => {
-    example(1)
+    // fp-ts bug
+    example(1);
+
+    // Just TypeScript bug
+    ctx("test");
 }
